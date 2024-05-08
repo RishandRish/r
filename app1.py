@@ -5,8 +5,8 @@ from langchain_openai import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 
 client = QdrantClient(
-    location=os.environ.get("QDRANT_URL"),
-    api_key=os.environ.get("QDRANT_API_KEY"),
+    url="",
+    api_key="",
 )
 
 embedding_function = OpenAIEmbeddings()
